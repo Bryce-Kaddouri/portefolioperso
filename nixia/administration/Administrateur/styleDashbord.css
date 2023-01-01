@@ -1,0 +1,193 @@
+body{
+  background-color: #f7f7f9;
+}
+
+:root {
+  --main-bg-color: #009d63;
+  --main-text-color: #009d63;
+  --second-text-color: #bbbec5;
+  --second-bg-color: #c1efde;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to right,
+    #baf3d7,
+    #c2f5de,
+    #cbf7e4,
+    #d4f8ea,
+    #ddfaef
+  );
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+  
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+.infoBox{
+  background-color: red;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+
+/* zone des membre avec boostrap 5 */
+.membre_carte{
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  width: 1200px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 25px;
+  display: flex;
+}
+.membre_carte .image_membre{
+  margin: 25px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  width: 200px;
+  height: 250px;
+  border-radius: 25px;
+}
+
+.information_membre{
+  display: block;
+  
+  margin: 25px;
+  width: 750px;
+}
+
+.left-side{
+  text-align: center;
+  height: 250px;
+  width:600px;
+  border: 1px solid #000;
+  margin: 0;
+}
+
+.left-side span{
+  font-size: 50px;
+  color: #0e0e0e;
+  text-decoration: underline;
+}
+.left-side p{
+  font-size: 30px;
+}
+
+
+
+
+.bouton_membre{
+  height: 200px;
+  width: 300px;
+  display: block;
+  margin: 15px;
+}
+
+.ligne_bouton{
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 2px solid #0e0e0e;
+  background-color: red;
+  display: flex;
+}
+.ligne_bouton p{
+  padding: 0;
+  margin: auto;
+}
+.ligne_bouton a{
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+
+
+.img_bouton{
+  margin: auto;
+  height: 25px;
+  width: 25px;
+}
+
+
+#email{
+  height:50px; border:1px solid black;
+}
